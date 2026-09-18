@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 50" width="210" height="50">
+  <g transform="translate(6, 7)">
+    <!-- 3 Bars: Red, Navy, Orange/Red -->
+    <rect x="0" y="3" width="34" height="7" fill="#e63946"/>
+    <rect x="0" y="14" width="34" height="7" fill="#001845"/>
+    <rect x="0" y="25" width="34" height="7" fill="#e63946"/>
+    
+    <!-- RUDRA in bold navy and orange triangle A -->
+    <text x="44" y="29" font-family="'Outfit', sans-serif" font-weight="900" font-size="30" fill="#001845" letter-spacing="-0.01em">RUDR</text>
+    <!-- Stylized A as orange triangle -->
+    <polygon points="152,4 172,30 162,30 152,14 142,30 132,30" fill="#f77f00"/>
+  </g>
+</svg>

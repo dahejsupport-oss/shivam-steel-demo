@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 50" width="210" height="50">
+  <g transform="translate(6, 7)">
+    <polygon points="18,0 36,10 36,28 18,36 0,28 0,10" fill="#b7094c"/>
+    <text x="18" y="25" font-family="'Outfit', sans-serif" font-weight="900" font-size="17" fill="#ffffff" text-anchor="middle">G</text>
+  </g>
+  <text x="50" y="24" font-family="'Outfit', sans-serif" font-weight="900" font-size="17" fill="#001845" letter-spacing="0.06em">GALLANTT</text>
+  <text x="50" y="38" font-family="'Inter', sans-serif" font-weight="800" font-size="8" fill="#b7094c" letter-spacing="0.18em">ADVANCE TMT</text>
+</svg>

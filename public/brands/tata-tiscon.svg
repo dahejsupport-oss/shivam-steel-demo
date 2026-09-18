@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" width="240" height="50">
+  <defs>
+    <linearGradient id="tata-rebar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2b4c7e" />
+      <stop offset="50%" stop-color="#567bb3" />
+      <stop offset="100%" stop-color="#1b355a" />
+    </linearGradient>
+  </defs>
+  <!-- Rebar Rib Graphic -->
+  <g transform="translate(10, 10)">
+    <rect x="0" y="8" width="220" height="14" rx="7" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="15" y1="5" x2="25" y2="25" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+    <line x1="30" y1="5" x2="40" y2="25" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+    <line x1="45" y1="5" x2="55" y2="25" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+    <text x="110" y="20" font-family="'Outfit', sans-serif" font-weight="900" font-style="italic" font-size="15" fill="#003566" text-anchor="middle" letter-spacing="0.08em">TATA TISCON</text>
+    <line x1="165" y1="5" x2="175" y2="25" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+    <line x1="180" y1="5" x2="190" y2="25" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+    <line x1="195" y1="5" x2="205" y2="25" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

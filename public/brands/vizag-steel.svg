@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 50" width="210" height="50">
+  <g transform="translate(6, 7)">
+    <!-- Official RINL / Vizag Steel Emblem -->
+    <circle cx="18" cy="18" r="17" fill="#003566"/>
+    <circle cx="18" cy="18" r="11" fill="#ffffff"/>
+    <circle cx="18" cy="18" r="6" fill="#0284c7"/>
+    <rect x="16" y="2" width="4" height="32" fill="#003566"/>
+    <rect x="2" y="16" width="32" height="4" fill="#003566"/>
+  </g>
+  <text x="50" y="24" font-family="'Outfit', sans-serif" font-weight="900" font-size="16.5" fill="#003566" letter-spacing="0.04em">VIZAG STEEL</text>
+  <text x="50" y="38" font-family="'Inter', sans-serif" font-weight="700" font-size="8" fill="#0284c7" letter-spacing="0.14em">RINL ENTERPRISE</text>
+</svg>

@@ -1,0 +1,415 @@
+/* 
+  Dahej Support Design System & Global Stylesheet
+  Theme: Royal Industrial Navy & Steel Blue Palette
+  Official Brand Color: #00286a
+*/
+
+:root {
+  /* Official Brand Navy from Logo */
+  --brand-navy: #00286a;
+  --brand-navy-dark: #00163b;
+  --brand-navy-deep: #00102b;
+  --brand-navy-light: #0d3b8e;
+  
+  --accent-primary: #00286a;
+  --accent-primary-hover: #001e52;
+  --accent-cobalt: #0a58ca;
+  --accent-cobalt-hover: #084298;
+  --accent-cerulean: #0284c7;
+  --accent-teal: #0891b2;
+  
+  /* Aliases for backwards compatibility */
+  --accent-orange: #00286a;
+  --accent-orange-hover: #001e52;
+  --accent-blue: #00163b;
+
+  /* Layered Backgrounds (Multi-tone shades of logo color for clear section division) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #eef3f8;     /* Ice Steel - alternating section background */
+  --bg-highlight: #e1ebf6;     /* Steel Mist - feature blocks, stat strips, callouts */
+  --bg-card: #ffffff;
+  --bg-card-hover: #f5f8fc;
+  --bg-card-subtle: #f8fafd;
+  --bg-dark: #00163b;
+  
+  /* Text Colors */
+  --text-primary: #001b44;
+  --text-secondary: #3b4e66;
+  --text-muted: #70849d;
+  --text-inverse: #ffffff;
+  
+  /* Borders & Glows */
+  --border-color: rgba(0, 40, 106, 0.10);
+  --border-color-hover: rgba(0, 40, 106, 0.24);
+  --border-color-light: rgba(0, 40, 106, 0.06);
+  --accent-glow: rgba(0, 40, 106, 0.16);
+  --accent-cobalt-glow: rgba(10, 88, 202, 0.22);
+
+  /* Fonts */
+  --font-headings: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Layout and UI - Broad, modern container width */
+  --max-width: 1480px;
+  --header-height: 80px;
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 16px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-slow: 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 10px rgba(0, 24, 68, 0.06);
+  --shadow-md: 0 8px 26px rgba(0, 24, 68, 0.09);
+  --shadow-lg: 0 16px 48px rgba(0, 24, 68, 0.14);
+}
+
+/* Reset and Core Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  font-family: var(--font-headings);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--border-radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 40, 106, 0.22);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 40, 106, 0.32);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--brand-navy);
+  border: 1.5px solid var(--brand-navy);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(0, 40, 106, 0.06);
+  border-color: var(--brand-navy);
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: var(--brand-navy);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.btn-white:hover {
+  background-color: #f3f6fa;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.arrow-icon {
+  transition: transform var(--transition-normal);
+}
+
+.btn:hover .arrow-icon {
+  transform: translate(2px, -2px);
+}
+
+.btn:hover .arrow-down-icon {
+  transform: translateY(3px);
+}
+
+/* Typography Helpers */
+.section-tag {
+  color: var(--brand-navy);
+  font-family: var(--font-headings);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-tag::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--brand-navy);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.section-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s var(--transition-normal) forwards;
+}
+
+/* Page Layout */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Sections */
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-bg-alt {
+  background-color: var(--bg-secondary);
+}
+
+.section-bg-mist {
+  background-color: var(--bg-highlight);
+}
+
+/* Floating Actions Container */
+.floating-actions-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 999;
+}
+
+/* Float WhatsApp Widget */
+.whatsapp-widget {
+  background-color: #25d366;
+  color: white;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+  transition: transform var(--transition-normal), background-color var(--transition-normal);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.whatsapp-widget:hover {
+  transform: scale(1.08) rotate(10deg);
+  background-color: #20ba5a;
+}
+
+/* Float Inquiry Widget */
+.inquiry-widget {
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 22px rgba(0, 40, 106, 0.35);
+  transition: transform var(--transition-normal), background-color var(--transition-normal);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.inquiry-widget:hover {
+  transform: scale(1.08) rotate(-10deg);
+  background-color: var(--accent-primary-hover);
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  color: var(--text-primary);
+  transition: var(--transition-normal);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--brand-navy);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px var(--accent-glow);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Utilities */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-4, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+/* Color Utilities */
+.text-brand, .text-orange {
+  color: var(--brand-navy) !important;
+}
+
+.text-cobalt {
+  color: var(--accent-cobalt) !important;
+}

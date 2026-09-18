@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <g transform="translate(6, 7)">
+    <polygon points="18,0 36,8 36,28 18,36 0,28 0,8" fill="#00286a"/>
+    <text x="18" y="24" font-family="'Outfit', sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">ST</text>
+  </g>
+  <text x="50" y="24" font-family="'Outfit', sans-serif" font-weight="900" font-size="17" fill="#00286a" letter-spacing="0.04em">ST TMT BARS</text>
+  <text x="50" y="38" font-family="'Inter', sans-serif" font-weight="700" font-size="8.5" fill="#d90429" letter-spacing="0.14em">Fe 550D TMT</text>
+</svg>

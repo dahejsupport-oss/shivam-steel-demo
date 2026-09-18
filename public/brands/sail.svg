@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
+  <g transform="translate(8, 4)">
+    <!-- Iconic SAIL Diamond/Chevron Emblem -->
+    <polygon points="22,0 44,14 44,28 22,14" fill="#00286a"/>
+    <polygon points="22,0 0,14 0,28 22,14" fill="#00286a"/>
+    <polygon points="22,14 36,23 36,36 22,27" fill="#00286a"/>
+    <polygon points="22,14 8,23 8,36 22,27" fill="#00286a"/>
+    <!-- Central diamond -->
+    <polygon points="22,10 32,17 22,24 12,17" fill="#00286a"/>
+  </g>
+  <!-- Text -->
+  <text x="64" y="30" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#00286a">सेल</text>
+  <text x="96" y="30" font-family="'Outfit', sans-serif" font-weight="900" font-size="18" fill="#00286a" letter-spacing="0.06em">SAIL</text>
+</svg>
