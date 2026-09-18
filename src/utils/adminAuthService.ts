@@ -37,6 +37,7 @@ export const ALLOWED_ADMIN_IDENTIFIERS = [
   'login@dahejsupport.com',
   'help@dahejsupport.com',
   'admin@dahejsupport.com',
+  'dahejsupport@gmail.com',
   'shivamsteelproject@gmail.com',
   'hetp82259@gmail.com',
   'shivamsteel2015@gmail.com',

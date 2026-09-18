@@ -112,7 +112,7 @@ export const DEFAULT_INQUIRY_EMAIL_CONFIG: InquiryEmailConfig = {
   senderName: 'Dahej Support (Inquiry Desk)',
   smtpPass: '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',
   provider: 'brevo_api',
-  adminNotificationEmail: 'hetp82259@gmail.com'
+  adminNotificationEmail: 'dahejsupport@gmail.com'
 };
 
 export function getInquiryEmailConfig(): InquiryEmailConfig {
