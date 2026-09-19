@@ -34,6 +34,7 @@ import {
   fetchEmailConfigFromCloud, 
   fetchInquiryEmailConfigFromCloud 
 } from '../utils/emailService';
+import MainSiteBanner from '../components/MainSiteBanner';
 import './Login.css';
 
 type LoginMode = 'login_credentials' | 'login_otp' | 'forgot_request' | 'forgot_verify';
@@ -343,6 +344,9 @@ export default function Login() {
 
   return (
     <div className="login-page animate-fade-in">
+      {/* Top Banner right at top of screen */}
+      <MainSiteBanner variant="standalone" />
+
       <div className="login-bg-overlay"></div>
 
       <div className="login-container">
@@ -857,9 +861,21 @@ export default function Login() {
           )}
 
           <div className="login-card-footer">
-            <Link to="/" className="back-to-site-link">
-              &larr; Back to Dahej Support Website
-            </Link>
+            <a 
+              href="https://www.dahejsupport.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="back-to-site-link"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 600, color: '#00286a' }}
+            >
+              <span>Back to Dahej Support Site (www.dahejsupport.com)</span>
+              <ArrowRight size={14} />
+            </a>
+            <div style={{ marginTop: '8px' }}>
+              <Link to="/" style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                &larr; Return to Shivam Steel Demo Home
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(238, 243, 248, 0.92) 0%, rgba(225, 235, 246, 0.95) 100%), url('/about_company.jpg') center/cover no-repeat;
-  padding: 40px 24px;
+  padding: 68px 24px 40px;
 }
 
 .login-bg-overlay {

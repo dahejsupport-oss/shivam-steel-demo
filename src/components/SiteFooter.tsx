@@ -183,6 +183,16 @@ export default function SiteFooter() {
             &copy; {currentYear} Dahej Support. All rights reserved.
           </p>
           <div className="bottom-links">
+            <a 
+              href="https://www.dahejsupport.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="footer-main-site-link"
+              style={{ color: '#fbbf24', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '0.85rem' }}
+            >
+              <span>Dahej Support Main Portal</span>
+              <ArrowUpRight size={13} />
+            </a>
             <span className="location-tag">Dahej • Bharuch • Gujarat • India</span>
           </div>
         </div>

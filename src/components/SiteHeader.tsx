@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Menu, X, Phone, ArrowUpRight } from 'lucide-react';
+import MainSiteBanner from './MainSiteBanner';
 import './SiteHeader.css';
 
 export default function SiteHeader() {
@@ -98,6 +99,9 @@ export default function SiteHeader() {
         </button>
       </div>
 
+      {/* Exact line/banner right below Navigation Bar */}
+      <MainSiteBanner variant="header" />
+
       {/* Mobile Sidebar Navigation */}
       <div className={`mobile-nav-overlay ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(false)}>
         <div className="mobile-nav-drawer" onClick={(e) => e.stopPropagation()}>
@@ -177,6 +181,21 @@ export default function SiteHeader() {
           </ul>
 
           <div className="mobile-drawer-footer">
+            <a
+              href="https://www.dahejsupport.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary w-full text-center"
+              style={{
+                borderColor: '#f59e0b',
+                color: '#b45309',
+                backgroundColor: 'rgba(251, 191, 36, 0.1)',
+                fontWeight: 700
+              }}
+            >
+              Back to Dahej Support Site <ArrowUpRight size={16} className="arrow-icon" />
+            </a>
+
             <a href="tel:+919601574966" className="mobile-phone-link">
               <div className="phone-icon-box">
                 <Phone size={18} className="phone-icon" />

@@ -139,8 +139,8 @@
   display: flex;
   flex: 1;
   min-height: 0;
-  height: calc(100vh - 70px);
-  height: calc(100dvh - 70px);
+  height: calc(100vh - 114px);
+  height: calc(100dvh - 114px);
   overflow: hidden;
   position: relative;
 }
@@ -2449,8 +2449,8 @@
   }
 
   .admin-workspace {
-    height: calc(100vh - 62px);
-    height: calc(100dvh - 62px);
+    height: calc(100vh - 104px);
+    height: calc(100dvh - 104px);
   }
 
   .admin-mobile-toggle-btn {
@@ -2628,8 +2628,8 @@
   }
 
   .admin-workspace {
-    height: calc(100vh - 56px);
-    height: calc(100dvh - 56px);
+    height: calc(100vh - 98px);
+    height: calc(100dvh - 98px);
   }
 
   .admin-header-logo-icon {

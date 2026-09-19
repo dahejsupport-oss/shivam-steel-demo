@@ -106,6 +106,7 @@ import {
   exportInventoryLedgerToCSV,
   exportProductsToCSV
 } from '../utils/exportUtils';
+import MainSiteBanner from '../components/MainSiteBanner';
 import './Admin.css';
 
 interface Inquiry {
@@ -2288,6 +2289,9 @@ GSTIN: 24BCSPP4924R1ZN`;
             </button>
           </div>
         </header>
+
+        {/* Return to Dahej Support Site Banner */}
+        <MainSiteBanner variant="admin" />
 
         {/* Global Feedback Banner */}
         {syncFeedback && (

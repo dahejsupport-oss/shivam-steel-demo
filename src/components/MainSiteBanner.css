@@ -1,0 +1,274 @@
+/* 
+  Main Site Banner Strip Stylesheet
+  Theme: Royal Industrial Navy with Golden/Amber Alert Accents
+  Target: Seamless bar below navbar across all public & admin pages
+*/
+
+.main-site-banner-strip {
+  width: 100%;
+  background: linear-gradient(90deg, #001845 0%, #00286a 45%, #08337a 80%, #00163b 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 3px 12px rgba(0, 24, 68, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  position: relative;
+  z-index: 990;
+  transition: all var(--transition-normal);
+}
+
+.main-site-banner-container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 8px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 42px;
+}
+
+/* 1. Left Side: Important Badge & Message */
+.banner-info-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+/* Pulsing Important Pill Badge */
+.banner-important-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(251, 191, 36, 0.16);
+  border: 1px solid rgba(251, 191, 36, 0.5);
+  padding: 3px 10px;
+  border-radius: 999px;
+  color: #fbbf24;
+  font-family: var(--font-headings);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.2);
+}
+
+.badge-sparkle-icon {
+  color: #fde047;
+  animation: bannerSparkle 2.5s infinite ease-in-out;
+}
+
+@keyframes bannerSparkle {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+  50% { transform: scale(1.25) rotate(15deg); opacity: 1; filter: drop-shadow(0 0 4px #fde047); }
+}
+
+/* Animated Pulse Indicator Dot */
+.pulse-indicator {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #22c55e;
+}
+
+.pulse-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(34, 197, 94, 0.6);
+  animation: pulseAnim 1.8s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes pulseAnim {
+  0% { transform: scale(0.9); opacity: 0.9; }
+  70% { transform: scale(2.4); opacity: 0; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+
+/* Message Text */
+.banner-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.banner-heading {
+  font-family: var(--font-headings);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.banner-divider {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.85rem;
+}
+
+.banner-tagline {
+  color: #c7d7eb;
+  font-weight: 400;
+  font-size: 0.84rem;
+}
+
+/* 2. Right Side: Premium CTA Button */
+.banner-action-wrap {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.main-site-return-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #00163b !important;
+  font-family: var(--font-headings);
+  font-weight: 700;
+  font-size: 0.84rem;
+  padding: 6px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35), 0 0 12px rgba(251, 191, 36, 0.2);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.main-site-return-btn:hover {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #000f29 !important;
+  transform: translateY(-1.5px) scale(1.02);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.5), 0 0 18px rgba(251, 191, 36, 0.4);
+}
+
+.btn-globe-icon {
+  color: #001e52;
+  flex-shrink: 0;
+}
+
+.btn-url-tag {
+  background: rgba(0, 24, 68, 0.18);
+  color: #00163b;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+
+.btn-arrow-icon {
+  color: #00163b;
+  transition: transform var(--transition-fast);
+}
+
+.main-site-return-btn:hover .btn-arrow-icon {
+  transform: translate(2px, -2px);
+}
+
+/* Variant-specific adjustments */
+/* 1. Header Variant (Placed directly under fixed navbar) */
+.banner-variant-header {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* 2. Admin Variant (Placed inside Admin layout under Admin Topbar) */
+.banner-variant-admin {
+  background: linear-gradient(90deg, #00163b 0%, #00286a 60%, #0d3b8e 100%);
+  border-top: none;
+  border-bottom: 1px solid rgba(0, 40, 106, 0.18);
+  box-shadow: 0 2px 8px rgba(0, 24, 68, 0.1);
+  flex-shrink: 0;
+}
+
+.banner-variant-admin .main-site-banner-container {
+  padding: 7px 36px;
+}
+
+/* 3. Standalone Variant (E.g. top of Login page) */
+.banner-variant-standalone {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Responsive Styles */
+@media (max-width: 1100px) {
+  .banner-tagline {
+    display: none;
+  }
+  .banner-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-site-banner-container {
+    padding: 7px 16px;
+    gap: 10px;
+  }
+
+  .banner-variant-admin .main-site-banner-container {
+    padding: 7px 16px;
+  }
+
+  .banner-heading {
+    font-size: 0.8rem;
+  }
+
+  .banner-important-badge {
+    padding: 2px 8px;
+    font-size: 0.68rem;
+  }
+
+  .main-site-return-btn {
+    padding: 5px 12px;
+    font-size: 0.78rem;
+    gap: 6px;
+  }
+
+  .btn-url-tag {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-info-wrap {
+    gap: 6px;
+  }
+
+  .banner-important-badge {
+    display: none;
+  }
+
+  .btn-text {
+    display: inline;
+  }
+}
